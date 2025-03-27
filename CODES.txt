@@ -1,0 +1,425 @@
+CODE HTML
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio BTS SIO - Spécialité SISR</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#e4">Projets E4</a></li>
+                <li><a href="#veille">Veille Technologique</a></li>
+                <li><a href="#e5">Épreuve E5</a></li>
+                <li><a href="#competences">Compétences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-icon">
+                    <img src="Image/icone1.gif" alt="Icône Réseau" />
+                </div>
+                <div class="about-content">
+                    <h2 class="animated-title">Bienvenue dans <span>mon univers numérique !</span></h2>
+                    <p>
+                        Mon nom est Laetitia-Marie Diallo, étudiante en deuxième année de BTS Services Informatiques aux Organisations, option SISR. Stimulée par l'évolution foudroyante des technologies de l'information et de la communication, j'ai choisi cette spécialisation afin de participer à ce développement en mettant à profit mes compétences acquises lors de mes années d'études.
+                    </p>
+                    <p class="highlighted-text">
+                        Explorez mes <span class="highlight">projets</span>, découvrez mes <span class="highlight">compétences</span> et plongez dans un univers où innovation et rigueur technique se rencontrent.
+                    </p>
+                    <button class="cta-button" onclick="scrollToProjects()">Découvrir mes projets</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        </section>
+        
+        
+        <!-- Section Épreuves E4 -->
+        <section id="e4">
+            <h2>Projets E4</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Épreuve 1</h3>
+                    <p>Installation et configuration d’un serveur Windows.</p>
+                    <a href="docs/epreuve1.pdf" target="_blank">Voir le document</a>
+                </div>
+                <div class="card">
+                    <h3>Épreuve 2</h3>
+                    <p>Mise en place d’un réseau local sécurisé pour une entreprise.</p>
+                    <a href="docs/epreuve2.pdf" target="_blank">Voir le document</a>
+                </div>
+                <div class="card">
+                    <h3>Épreuve 3</h3>
+                    <p>Supervision réseau avec Zabbix.</p>
+                    <a href="docs/epreuve3.pdf" target="_blank">Voir le document</a>
+                </div>
+                <div class="card">
+                    <h3>Épreuve 4</h3>
+                    <p>Automatisation des sauvegardes avec un script PowerShell.</p>
+                    <a href="docs/epreuve4.pdf" target="_blank">Voir le document</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Épreuve E5 -->
+        <section id="e5">
+            <h2>Épreuve E5</h2>
+            <div class="card">
+                <h3>Gestion et maintenance d’un réseau d’entreprise</h3>
+                <p>Étude de cas : diagnostic et résolution des incidents liés à la connectivité réseau.</p>
+                <a href="docs/epreuve5.pdf" target="_blank">Voir le document</a>
+            </div>
+        </section>
+
+        <!-- Section Veille Technologique -->
+        <section id="veille">
+            <h2>Veille Technologique</h2>
+            <p>Thème : La cybersécurité dans les systèmes d’infrastructure (pare-feu, VPN, bonnes pratiques).</p>
+            <a href="docs/veille.pdf" target="_blank">Voir le document</a>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="competences">
+            <h2>Compétences Acquises</h2>
+            <ul>
+                <li>Installation, configuration et administration de serveurs (Windows, Linux).</li>
+                <li>Gestion des réseaux locaux (switching, routage, VLAN).</li>
+                <li>Supervision réseau (Nagios, Zabbix).</li>
+                <li>Sécurisation des infrastructures (pare-feu, VPN, politiques de sécurité).</li>
+                <li>Automatisation avec des scripts (PowerShell, Bash).</li>
+            </ul>
+        </section>
+        
+
+ 
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio BTS SIO - Tous droits réservés.</p>
+    </footer>
+    <script>
+        function scrollToProjects() {
+            const projectsSection = document.getElementById('e4'); // Assurez-vous que l'ID de la section projets est correct
+            if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CODE CSS
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: url('Image/Cyber.jpg') no-repeat center center fixed; /* Image de fond représentant un réseau */
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background: #1e3a56;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffcc00; /* Accent couleur or */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+main section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main section h2 {
+    text-align: center;
+    color: #1e3a56;
+}
+
+/* Style pour les cartes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: rgba(240, 240, 240, 0.95);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #1e3a56;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #1e3a56;
+    color: #fff;
+    margin-top: 2rem;
+}#about {
+   /* Section À Propos */
+#about {
+    background: linear-gradient(135deg, #1e3a56, #4682b4); /* Dégradé bleu */
+    color: #fff;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Conteneur principal */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Icône de présentation */
+.about-icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #1e3a56;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Texte et contenu */
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: hsla(228, 24%, 68%, 0.95); /* Couleur dorée pour le titre */
+}
+
+.about-content p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Texte en surbrillance */
+.about-content .highlight {
+    color: #00bbffe4;
+    font-weight: bold;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2rem;
+    }
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+}
+
+#about h2 {
+    text-align: center;
+    color: #ffcc00; /* Couleur dorée pour le titre */
+    margin-bottom: 1rem;
+}
+
+#about p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}/* Icône de présentation */
+.about-icon img {
+    width: 100px; /* Ajustez selon vos besoins */
+    height: 100px;
+    border-radius: 50%; /* Rond */
+    border: 3px solid #fff; /* Bord blanc */
+    background-color: #1e3a56; /* Fond bleu sombre */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre élégante */
+    display: block;
+    margin: 0 auto 1rem; /* Centré */
+}
+/* Section d'accueil */
+#about {
+    background: linear-gradient(135deg, #1e3a56, #4682b4);
+    color: #fff;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icône animée */
+.about-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #1e3a56;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+    animation: bounce 2s infinite ease-in-out; /* Animation sautante */
+}
+
+/* Titre animé */
+.animated-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+    position: relative;
+}
+
+.animated-title span {
+    display: inline-block;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Texte avec surbrillance */
+.highlighted-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite; /* Animation scintillante */
+}
+
+/* Bouton interactif */
+.cta-button {
+    background: #ffcc00;
+    color: #1e3a56;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    background-color: #ffd633;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
