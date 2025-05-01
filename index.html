@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Test GitHub Pages</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ça fonctionne ! 🎉</h1>
-  <p>Si tu vois cette page, GitHub Pages est bien configuré.</p>
+    <header>
+        <h1>Portfolio BTS SIO - Spécialité SISR</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#e4">Projets E4</a></li>
+                <li><a href="#veille">Veille Technologique</a></li>
+                <li><a href="#e5">Épreuve E5</a></li>
+                <li><a href="#competences">Compétences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-icon">
+                    <img src="Image/icone1.gif" alt="Icône Réseau" />
+                </div>
+                <div class="about-content">
+                    <h2 class="animated-title">Bienvenue dans <span>mon univers numérique !</span></h2>
+                    <p>
+                        Mon nom est Laetitia-Marie Diallo, étudiante en deuxième année de BTS Services Informatiques aux Organisations, option SISR. Stimulée par l'évolution foudroyante des technologies de l'information et de la communication, j'ai choisi cette spécialisation afin de participer à ce développement en mettant à profit mes compétences acquises lors de mes années d'études.
+                    </p>
+                    <p class="highlighted-text">
+                        Explorez mes <span class="highlight">projets</span>, découvrez mes <span class="highlight">compétences</span> et plongez dans un univers où innovation et rigueur technique se rencontrent.
+                    </p>
+                    <button class="cta-button" onclick="scrollToProjects()">Découvrir mes projets</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        </section>
+        
+        
+        <!-- Section Épreuves E4 -->
+        <section id="e4">
+            <h2>Projets E4</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Épreuve 1</h3>
+                    <p>Installation et configuration d’un serveur Windows.</p>
+                    <a href="docs/epreuve1.pdf" target="_blank">Voir le document</a>
+                </div>
+                <div class="card">
+                    <h3>Épreuve 2</h3>
+                    <p>Mise en place d’un réseau local sécurisé pour une entreprise.</p>
+                    <a href="docs/epreuve2.pdf" target="_blank">Voir le document</a>
+                </div>
+                <div class="card">
+                    <h3>Épreuve 3</h3>
+                    <p>Supervision réseau avec Zabbix.</p>
+                    <a href="docs/epreuve3.pdf" target="_blank">Voir le document</a>
+                </div>
+                <div class="card">
+                    <h3>Épreuve 4</h3>
+                    <p>Automatisation des sauvegardes avec un script PowerShell.</p>
+                    <a href="docs/epreuve4.pdf" target="_blank">Voir le document</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Épreuve E5 -->
+        <section id="e5">
+            <h2>Épreuve E5</h2>
+            <div class="card">
+                <h3>Gestion et maintenance d’un réseau d’entreprise</h3>
+                <p>Étude de cas : diagnostic et résolution des incidents liés à la connectivité réseau.</p>
+                <a href="docs/epreuve5.pdf" target="_blank">Voir le document</a>
+            </div>
+        </section>
+
+        <!-- Section Veille Technologique -->
+        <section id="veille">
+            <h2>Veille Technologique</h2>
+            <p>Thème : La cybersécurité dans les systèmes d’infrastructure (pare-feu, VPN, bonnes pratiques).</p>
+            <a href="docs/veille.pdf" target="_blank">Voir le document</a>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="competences">
+            <h2>Compétences Acquises</h2>
+            <ul>
+                <li>Installation, configuration et administration de serveurs (Windows, Linux).</li>
+                <li>Gestion des réseaux locaux (switching, routage, VLAN).</li>
+                <li>Supervision réseau (Nagios, Zabbix).</li>
+                <li>Sécurisation des infrastructures (pare-feu, VPN, politiques de sécurité).</li>
+                <li>Automatisation avec des scripts (PowerShell, Bash).</li>
+            </ul>
+        </section>
+        
+
+ 
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portfolio BTS SIO - Tous droits réservés.</p>
+    </footer>
+    <script>
+        function scrollToProjects() {
+            const projectsSection = document.getElementById('e4'); // Assurez-vous que l'ID de la section projets est correct
+            if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    
 </body>
 </html>
