@@ -1,188 +1,284 @@
-/* Reset de base */
-* {
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Couleurs principales */
-:root {
-    --rose-clair: #fbe7f0;
-    --rose-principal: #e07aa5;
-    --rose-foncé: #b04e78;
-    --blanc: #ffffff;
-    --gris-clair: #f5f5f5;
-    --texte: #333333;
-}
-
-/* Style global */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var (--rose-clair);
-    color: var (--texte);
     line-height: 1.6;
-    padding-top: 80 px;
+    color: #333;
+    background: url('Image/Cyber.jpg') no-repeat center center fixed; /* Image de fond représentant un réseau */
+    background-size: cover;
 }
 
-/* En-tête */
+/* Header */
 header {
-    background-color: var (--rose-principal);
-    color: var (--blanc);
-    padding: 20 px 0;
-    position: fixed;
-    width: 100 %;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2 px 4 px rgba (0, 0, 0, 0.1);
-}
-
-header h1 {
+    background: #1e3a56;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    font-size: 1.8 em;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+header nav ul {
     list-style: none;
-    padding: 10 px 0;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 15 px;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: var (--blanc);
+header nav ul li a {
+    color: #ffcc00; /* Accent couleur or */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3 s ease;
 }
 
-nav ul li a:hover {
-    color: var (--rose-clair);
+/* Sections */
+main section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Sections principales */
-main {
-    padding: 40 px 20 px;
-    max-width: 1000 px;
-    margin: 0 auto;
+main section h2 {
+    text-align: center;
+    color: #1e3a56;
 }
 
-h2 {
-    margin-bottom: 20 px;
-    color: var (--rose-foncé);
-    border-bottom: 2 px solid var (--rose-principal);
-    display: inline-block;
-}
-
-/* Section À propos */
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20 px;
-    margin-bottom: 50 px;
-}
-
-.about-icon img {
-    width: 100 px;
-    height: auto;
-}
-
-.about-content {
-    flex: 1;
-}
-
-.animated-title span {
-    color: var (--rose-principal);
-}
-
-.highlighted-text {
-    margin-top: 10 px;
-    font-weight: 500;
-}
-
-.highlight {
-    color: var (--rose-foncé);
-    font-weight: bold;
-}
-
-.cta-button {
-    margin-top: 15 px;
-    padding: 10 px 20 px;
-    background-color: var (--rose-principal);
-    color: var (--blanc);
-    border: none;
-    border-radius: 25 px;
-    cursor: pointer;
-    transition: background 0.3 s;
-}
-
-.cta-button:hover {
-    background-color: var (--rose-foncé);
-}
-
-/* Cartes projets */
+/* Style pour les cartes */
 .card-container {
     display: grid;
-    grid-template-columns: repeat (auto-fit, minmax (250 px, 1 fr));
-    gap: 20 px;
-    margin-bottom: 40 px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .card {
-    background-color: var (--blanc);
-    padding: 20 px;
-    border-radius: 12 px;
-    box-shadow: 0 4 px 8 px rgba (0, 0, 0, 0.05);
-    transition: transform 0.3 s ease;
-}
-
-.card:hover {
-    transform: translateY (-5 px);
+    background: rgba(240, 240, 240, 0.95);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .card h3 {
-    margin-bottom: 10 px;
-    color: var (--rose-foncé);
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card p {
+    color: #555;
 }
 
 .card a {
     display: inline-block;
-    margin-top: 10 px;
+    margin-top: 0.5rem;
+    color: #1e3a56;
     text-decoration: none;
-    color: var (--rose-principal);
     font-weight: bold;
 }
 
-/* Compétences */
-#competences ul {
-    list-style: disc inside;
-    margin-top: 10 px;
-    padding-left: 10 px;
+.card a:hover {
+    text-decoration: underline;
 }
 
-/* Pied de page */
+/* Footer */
 footer {
     text-align: center;
-    padding: 20 px;
-    background-color: var (--rose-principal);
-    color: var (--blanc);
-    margin-top: 40 px;
+    padding: 1rem 0;
+    background: #1e3a56;
+    color: #fff;
+    margin-top: 2rem;
+}#about {
+   /* Section À Propos */
+#about {
+    background: linear-gradient(135deg, #1e3a56, #4682b4); /* Dégradé bleu */
+    color: #fff;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 768 px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Conteneur principal */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
-    nav ul {
-        flex-direction: column;
-        gap: 10 px;
+/* Icône de présentation */
+.about-icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #1e3a56;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Texte et contenu */
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: hsla(228, 24%, 68%, 0.95); /* Couleur dorée pour le titre */
+}
+
+.about-content p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Texte en surbrillance */
+.about-content .highlight {
+    color: #00bbffe4;
+    font-weight: bold;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2rem;
     }
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+}
+
+#about h2 {
+    text-align: center;
+    color: #ffcc00; /* Couleur dorée pour le titre */
+    margin-bottom: 1rem;
+}
+
+#about p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}/* Icône de présentation */
+.about-icon img {
+    width: 100px; /* Ajustez selon vos besoins */
+    height: 100px;
+    border-radius: 50%; /* Rond */
+    border: 3px solid #fff; /* Bord blanc */
+    background-color: #1e3a56; /* Fond bleu sombre */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre élégante */
+    display: block;
+    margin: 0 auto 1rem; /* Centré */
+}
+/* Section d'accueil */
+#about {
+    background: linear-gradient(135deg, #1e3a56, #4682b4);
+    color: #fff;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icône animée */
+.about-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #1e3a56;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+    animation: bounce 2s infinite ease-in-out; /* Animation sautante */
+}
+
+/* Titre animé */
+.animated-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+    position: relative;
+}
+
+.animated-title span {
+    display: inline-block;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Texte avec surbrillance */
+.highlighted-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite; /* Animation scintillante */
+}
+
+/* Bouton interactif */
+.cta-button {
+    background: #ffcc00;
+    color: #1e3a56;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    background-color: #ffd633;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
 }
