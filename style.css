@@ -48,6 +48,29 @@ header nav ul li a {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+
+#synthese, #certifications {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#synthese h2, #certifications h2 {
+    color: #1e3a56;
+    text-align: center;
+}
+
+#synthese .card, #certifications .card {
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
 /* ------------------------------
    MAIN SECTIONS
 ------------------------------ */
